@@ -1,0 +1,27 @@
+{
+  "name": "s2hub/silverstripe-membership-directory",
+  "description": "Adds a directory or members to a site",
+  "type": "silverstripe-vendormodule",
+  "homepage": "https://github.com/s2hub/silverstripe-membership-directory",
+  "keywords": [
+    "silverstripe"
+  ],
+  "authors": [
+    {
+      "name": "Tim Burt",
+      "email": "tim@dorset-digital.net"
+    }
+  ],
+  "require": {
+    "silverstripe/cms": "^5.0"
+  },
+  "license": "BSD-3-Clause",
+  "autoload": {
+    "psr-4": {
+      "S2Hub\\MembershipDirectory\\": "src/"
+    }
+  },
+  "extra": {
+  },
+  "minimum-stability": "dev"
+}
