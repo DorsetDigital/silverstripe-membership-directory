@@ -42,4 +42,6 @@ class DirectoryMemberShowcase extends DataObject
         'ShowcaseImages'
     ];
     private static $default_sort = 'Sort ASC';
+    private static $singular_name = 'Showcase';
+    private static $plural_name = 'Showcases';
 }

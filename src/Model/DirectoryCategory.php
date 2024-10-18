@@ -8,7 +8,7 @@ use SilverStripe\ORM\DataObject;
  * Class \S2Hub\MembershipDirectory\Model\DirectoryCategory
  *
  * @property string $Title
- * @method \SilverStripe\ORM\ManyManyList|\S2Hub\MembershipDirectory\Model\DirectoryMember[] DirectoryMember()
+ * @method \SilverStripe\ORM\ManyManyList|\S2Hub\MembershipDirectory\Model\DirectoryMember[] DirectoryMembers()
  */
 class DirectoryCategory extends DataObject
 {
@@ -18,8 +18,15 @@ class DirectoryCategory extends DataObject
     ];
     private static $default_sort = 'Title ASC';
     private static $many_many = [
-        'DirectoryMember' => DirectoryMember::class
+        'DirectoryMembers' => DirectoryMember::class
     ];
     private static $singular_name = 'Directory Category';
     private static $plural_name = 'Directory Categories';
+
+    public function getCMSFields()
+    {
+        $fields = parent::getCMSFields();
+        $fields->removeByName('DirectoryMembers');
+        return $fields;
+    }
 }

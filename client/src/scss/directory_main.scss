@@ -1,0 +1,9 @@
+
+#membership-page-content {
+  transition: opacity 0.2s ease-in-out;
+  opacity: 1;
+}
+
+#membership-page-content.hidden {
+  opacity: 0;
+}

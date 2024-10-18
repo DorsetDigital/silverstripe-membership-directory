@@ -4,6 +4,7 @@ namespace S2Hub\MembershipDirectory\Admin;
 
 use S2Hub\MembershipDirectory\Model\DirectoryCategory;
 use S2Hub\MembershipDirectory\Model\DirectoryMember;
+use S2Hub\MembershipDirectory\Model\DirectoryMemberAccreditation;
 use SilverStripe\Admin\ModelAdmin;
 
 /**
@@ -14,7 +15,8 @@ class MembershipDirectoryAdmin extends ModelAdmin
 {
     private static $managed_models = [
         DirectoryMember::class,
-        DirectoryCategory::class
+        DirectoryCategory::class,
+        DirectoryMemberAccreditation::class
     ];
     private static $url_segment = 'membership-directory';
     private static $menu_title = 'Membership Directory';

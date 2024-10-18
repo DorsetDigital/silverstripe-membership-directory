@@ -22,6 +22,9 @@
     }
   },
   "extra": {
+      "expose": [
+          "client/dist"
+      ]
   },
   "minimum-stability": "dev"
 }
